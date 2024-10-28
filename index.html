@@ -1,12 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <style>
+  </style>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1>Alika</h1>
-    <p>tes</p>
+  <div class="letter-container" id="content">
+    <div class="corner-ornament top-left">❧</div>
+    <div class="corner-ornament top-right">❧</div>
+    <div class="corner-ornament bottom-left">❧</div>
+    <div class="corner-ornament bottom-right">❧</div>
+    
+    <div class="music-player">
+      <p>Our Cherished Melody</p>
+      <audio id="bgMusic" loop autoplay>
+        <source src="/assets/Ed Sheeran - Photograph (Official Lyric Video).mp3" type="audio/mpeg">
+      </audio>
+      <div class="music-controls">
+        <button class="music-button" onclick="document.getElementById('bgMusic').play()">Play</button>
+        <button class="music-button" onclick="document.getElementById('bgMusic').pause()">Pause</button>
+      </div>
+    </div>
+    
+    <h1 class="title">To My Beloved</h1>
+    <div class="content">
+      <p>My Darling [Her Name],</p>
+      
+      <p>As I put these words to paper, my heart brims with an affection that knows no bounds. Every moment we share becomes a treasured memory, each smile you grace me with illuminates my world, and with each passing day, my love for you grows deeper still.</p>
+      
+      <p>Your radiance surpasses all earthly beauty, and your love has painted my world in hues I never knew existed. You are the masterpiece that completes my life's gallery, a precious treasure beyond compare.</p>
+      
+      <p>When our eyes meet, time stands still, and the world fades into a perfect moment where only you and I exist. Your laughter is nature's sweetest symphony, and your touch brings a comfort words cannot describe.</p>
+      
+      <div class="ornament"><a href="/test.html">❦</a></div>
+      
+      <p>You are my everything - my muse, my joy, and my dreams made real.</p>
+    </div>
+    
+    <div class="signature">
+      With eternal devotion,<br>
+      [Your Name]<br>
+      <span style="font-size: 0.9em; margin-top: 0.5rem; display: block">P.S. - My love for you transcends all expression</span>
+    </div>
+  </div>
+
+  <script>
+    window.onload = function() {
+      // Try to play music immediately
+      const bgMusic = document.getElementById('bgMusic');
+      bgMusic.play().catch(function(error) {
+        console.log("Audio autoplay failed due to browser policy");
+      });
+    }
+  </script>
 </body>
 </html>
