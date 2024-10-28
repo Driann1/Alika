@@ -2,6 +2,126 @@
 <html>
 <head>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+    
+    body {
+      background-color: #f8f5f0;
+      color: #2c1810;
+      font-family: 'Cormorant Garamond', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: 
+        radial-gradient(#e8e1d5 1px, transparent 1px),
+        radial-gradient(#e8e1d5 1px, transparent 1px);
+      background-size: 40px 40px;
+      background-position: 0 0, 20px 20px;
+    }
+    
+    .letter-container {
+      max-width: 700px;
+      padding: 3.5rem 4rem;
+      background-color: #fff;
+      border: 1px solid #d4c5b9;
+      box-shadow: 
+        0 4px 12px rgba(0, 0, 0, 0.05),
+        0 0 0 1px rgba(212, 197, 185, 0.3);
+      margin: 4rem;
+      position: relative;
+    }
+    
+    .title {
+      font-family: 'Playfair Display', serif;
+      color: #2c1810;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-size: 2.2em;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    
+    .content {
+      line-height: 1.8;
+      font-size: 1.25em;
+      margin-bottom: 2.5rem;
+      color: #2c1810;
+    }
+    
+    .content p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .ornament {
+      text-align: center;
+      color: #917c6f;
+      margin: 2rem 0;
+      font-size: 1.5em;
+      
+    }
+    
+    .ornament a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .signature {
+      text-align: right;
+      color: #2c1810;
+      margin-top: 3rem;
+      font-style: italic;
+      font-size: 1.2em;
+    }
+    
+    .music-player {
+      text-align: center;
+      padding: 1rem 0 2rem;
+      border-bottom: 1px solid #d4c5b9;
+      margin-bottom: 2.5rem;
+    }
+    
+    .music-controls {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    
+    .music-button {
+      background-color: #2c1810;
+      color: #f8f5f0;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 2px;
+      cursor: pointer;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1em;
+      transition: all 0.3s ease;
+    }
+    
+    .music-button:hover {
+      background-color: #463027;
+    }
+    
+    .music-player p {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1em;
+      color: #2c1810;
+      margin-bottom: 0.5rem;
+    }
+    
+    .corner-ornament {
+      position: absolute;
+      color: #917c6f;
+      font-size: 1.5em;
+      opacity: 0.5;
+    }
+    
+    .top-left { top: 20px; left: 20px; }
+    .top-right { top: 20px; right: 20px; }
+    .bottom-left { bottom: 20px; left: 20px; }
+    .bottom-right { bottom: 20px; right: 20px; }
   </style>
   <link rel="stylesheet" href="/style.css">
 </head>
