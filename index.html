@@ -74,42 +74,44 @@
       font-size: 1.2em;
     }
     
-    .music-player {
-      text-align: center;
-      padding: 1rem 0 2rem;
-      border-bottom: 1px solid #d4c5b9;
-      margin-bottom: 2.5rem;
-    }
-    
-    .music-controls {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-top: 0.5rem;
-    }
-    
-    .music-button {
-      background-color: #2c1810;
-      color: #f8f5f0;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 2px;
-      cursor: pointer;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1em;
-      transition: all 0.3s ease;
-    }
-    
-    .music-button:hover {
-      background-color: #463027;
-    }
-    
-    .music-player p {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.1em;
-      color: #2c1810;
-      margin-bottom: 0.5rem;
-    }
+    /* New styles for the music player */
+.music-player {
+  background-color: #f8f5f0;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(212, 197, 185, 0.3);
+  margin-bottom: 2.5rem;
+}
+
+.music-player p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3em;
+  color: #2c1810;
+  margin-bottom: 1rem;
+}
+
+.music-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.music-button {
+  background-color: #2c1810;
+  color: #f8f5f0;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+.music-button:hover {
+  background-color: #463027;
+}
     
     .corner-ornament {
       position: absolute;
@@ -133,9 +135,9 @@
     <div class="corner-ornament bottom-right">❧</div>
     
     <div class="music-player">
-      <p>Our Cherished Melody</p>
+      <p style="text-align: center;">James Blunt - You're Beautiful</p>
       <audio id="bgMusic" loop autoplay>
-        <source src="assets/Ed Sheeran - Photograph (Official Lyric Video).mp3" type="audio/mpeg">
+        <source src="assets/James Blunt - You're Beautiful (Piano Cover by Riyandi Kusuma).mp3" type="audio/mpeg">
       </audio>
       <div class="music-controls">
         <button class="music-button" onclick="document.getElementById('bgMusic').play()">Play</button>
@@ -143,24 +145,26 @@
       </div>
     </div>
     
-    <h1 class="title">To My Beloved</h1>
     <div class="content">
-      <p>My Darling [Her Name],</p>
-      
-      <p>As I put these words to paper, my heart brims with an affection that knows no bounds. Every moment we share becomes a treasured memory, each smile you grace me with illuminates my world, and with each passing day, my love for you grows deeper still.</p>
-      
-      <p>Your radiance surpasses all earthly beauty, and your love has painted my world in hues I never knew existed. You are the masterpiece that completes my life's gallery, a precious treasure beyond compare.</p>
-      
-      <p>When our eyes meet, time stands still, and the world fades into a perfect moment where only you and I exist. Your laughter is nature's sweetest symphony, and your touch brings a comfort words cannot describe.</p>
-      
-      <div class="ornament"><a href="/test.html">❦</a></div>
-      
-      <p>You are my everything - my muse, my joy, and my dreams made real.</p>
+      <p>Alika Mi Amor</p>
+    
+      <p>Well, sebenernya aku gapunya terlalu banyak hal buat disampein ke kamu karena memang setiap ada hal yang pengen aku sampein ke kamu, aku selalu sampein langsung ga kaya dulu hehe. Maybe you didn't realized it but you've fixed me.</p>
+    
+      <p>So maksud aku, aku mau nyampein beberapa hal aja. Aku tau kamu banyak banget menghadapi rintangan taun ini, dan aku bangga banget kamu bisa ngelewatin semuanya meski aku tau itu semua ga mudah. I'm very proud of you.</p>
+    
+      <p>Makasih selalu sabar sama aku yang kadang masih suka ngelakuin hal konyol. I mean ... ga kadang sih hehehe...</p>
+    
+      <p>Tetep semangat terus ngejar mimpi nya sayang. I know it's hard, but I'm sure you'll get through everything. Just don't ever give up no matter how ridiculous the odds may seem. Percaya sama aku semua hal berat yang kamu lalui bakal jadi pelajaran dan kenangan yang indah buat kamu. I always believe in you that wanna see you shine even more.</p>
+    
+      <p>One last thing. Always Remember that I will always love you.</p>
     </div>
+    <div class="ornament"><a href="https://drive.google.com/file/d/1S_Sx_C2Dn7c3VlhnCO1jZUaazaqqryvy/view?usp=sharing">❦</a></div>
     
     <div class="signature">
-      With eternal devotion,<br>
-      [Your Name]<br>
+      
+lleno de amor,<br>
+      Adria 
+      tu amor<br>
       <span style="font-size: 0.9em; margin-top: 0.5rem; display: block">P.S. - My love for you transcends all expression</span>
     </div>
   </div>
